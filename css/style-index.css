@@ -1,0 +1,151 @@
+
+
+body {
+    background-color: #1A234A;
+}
+
+/* estilização nav */
+
+#nav {
+    height: 5em;
+    background-color: white;
+}
+
+
+
+/*estilização do form */
+
+#container .col-12 .col-3 span {
+    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    color: white;
+    font-size: 2em;
+}
+#container .col-12 .col-3 #tarefa {
+    padding-left: 1em;
+    font-size: 0.9em;   
+    width: 100%;
+    height: 3em;
+    border: rgb(24, 37, 150) solid 2px;
+    background-color: rgb(71, 95, 201);
+    color: white;
+}
+::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-size:0.1m;
+    color: whitesmoke;
+ }
+
+
+#container .col-12 .col-3 #representante { 
+    padding-left: 1em;
+    width: 100%;
+    height: 3em;
+    border: rgb(24, 37, 150) solid 2px;
+    background-color: rgb(71, 95, 201);
+    text-transform: uppercase;
+    font-size:0.1m;
+    color: whitesmoke;
+} 
+
+#container .col-12 .col-3 #data-final { 
+    padding-left: 1em;
+    width: 100%;
+    height: 3em;
+    border: rgb(24, 37, 150) solid 2px;
+    background-color: rgb(71, 95, 201);
+    text-transform: uppercase;
+    font-size:0.1m;
+    color: whitesmoke;
+} 
+
+#container .col-12 .col-3 #add { 
+    margin-top: 3.1em;
+    padding: 1em;
+    width: 100%;
+    height: 3em;
+    border: rgb(24, 37, 150) solid 2px;
+    background: linear-gradient(45deg,rgb(13, 21, 92),rgb(71, 95, 201));
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    font-size:0.1m;
+    color: whitesmoke;
+} 
+
+@media only screen and (max-width: 768px){
+#container .col-12 .col-3 #add { 
+    margin-top: 0;
+}
+}
+
+/* estilização das tarefas */
+
+#app {
+    padding-top:10em;
+}
+
+#app ul {
+    margin-bottom: 2em;
+    padding: 1.5em;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    
+}
+ #app ul li{ 
+    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+     text-transform: uppercase;
+     text-align: justify;
+     padding-right: 8em;
+     display:inline-flex;
+     list-style-type: none;
+ } 
+
+ #app ul #tar::before {
+    content: "Tarefa: ";
+    font-weight: bold;
+}
+#app ul #rep::before {
+    content: "Representante: ";
+    font-weight: bold;
+}
+#app ul #dat::before {
+    content: "Data: ";
+    font-weight: bold;
+}
+
+ @media only screen and (max-width: 768px){
+     #app {
+         padding-top:35em; 
+     }
+    #app ul li {
+        font-size: 1.2em;
+        width: 100%;
+        padding-right: 0;
+        display: block;
+    }     
+
+    #app h4 {
+        font-size:1.4em;
+    }
+
+ }
+
+#app h4 {
+    padding: 1em;
+    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color:white;
+}
+#app h4 i{
+    color: rgb(214, 54, 54);
+    font-size: 25px;
+    padding-right: 1.5em;
+    float: right;
+}
